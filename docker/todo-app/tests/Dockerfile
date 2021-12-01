@@ -3,4 +3,4 @@ WORKDIR /docker/todo-app/tests/
 COPY . .
 ADD node_modules.tar.gz ./
 RUN npm install
-ENTRYPOINT [ "npm test" ]
+CMD ["npm", "test"]
